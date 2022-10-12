@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://www.youtube.com/s/desktop/4aac258c/img/favicon_32.png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Youtube</title>
+  </head>
+  <body>
+    <!--Navbar -->
+    <div class="navbar">
+      <div class="side_menu">
+        <div class="logo__">
+          <div class="bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <nav>
+          <div class="center_side--nav">
+            <div class="searchbar">
+              <input type="text" placeholder="Search" id="video_search" />
+              <div onclick="SearchVideo__from_watch()">
+                <img
+                  src="https://cdn2.iconfinder.com/data/icons/apple-inspire-white/100/Apple-30-512.png"
+                  width="20px"
+                  height="20px"
+                />
+              </div>
+            </div>
+            <div class="mic">
+              <span class="material-icons">mic</span>
+            </div>
+          </div>
+          <div class="right_side--nav">
+            <div>
+              <span class="material-icons-outlined"> video_call </span>
+            </div>
+            <div>
+              <span class="material-icons-outlined"> apps </span>
+            </div>
+            <div>
+              <span class="material-icons-outlined">notifications</span>
+            </div>
+            <div>
+              <img
+                src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg"
+                class="avtar"
+              />
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!--Clicked videos n related videos -->
+    <div class="watchVideo">
+      <div class="mainVideo">
+        <!--Video  -->
+        <div class="video">
+          <iframe
+            width="100%"
+            height="480"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p id="title"></p>
+          <div class="details_video">
+            <div id="viewsBig_video"></div>
+            <div class="video_likes">
+              <div>
+                <span class="material-icons-outlined"> thumb_up </span>
+                <span>like</span>
+              </div>
+              <div>
+                <span class="material-icons-outlined"> thumb_down </span>
+                <span>dislike</span>
+              </div>
+              <div>
+                <span class="material-icons-outlined reply_swap"> reply </span>
+                <span>share</span>
+              </div>
+              <div>
+                <span class="material-icons-outlined"> playlist_add </span>
+                <span>save</span>
+              </div>
+              <div>
+                <span class="material-icons"> more_horiz </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Video Details-->
+        <div class="channelDetails">
+          <div>
+            <img id="bigVideo__profile" />
+            <div>
+              <p class="bigVideo__title"></p>
+              <p class="bigVideo__Des"></p>
+              <button onclick="show_des()">show more</button>
+            </div>
+          </div>
+          <div class="subscribe">SubScribe</div>
+        </div>
+        <!--Comments-->
+        <div>
+          <p>Comments</p>
+          <div class="comments">
+            <img
+              src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg"
+              class="avtar"
+            />
+            <input type="text" placeholder="Add a public comment..." />
+          </div>
+        </div>
+      </div>
+      <!--Related videos -->
+      <div class="relatedVideo">
+        <div class="filter_container">
+          <div>All</div>
+          <div>Mixes</div>
+          <div>Comedies</div>
+          <div>Music</div>
+          <div class="remove_small_screen">Website</div>
+          <div class="remove_small_screen">HTML</div>
+          <div class="remove_small_screen">CSS</div>
+          <div class="remove_small_screen">Stock markets</div>
+          <div class="remove_small_screen">JavaScript</div>
+          <div class="remove_small_screen">Cartoon</div>
+          <div class="remove_small_screen">Moive</div>
+        </div>
+        <div class="recommend"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./showVideo.js"></script>
