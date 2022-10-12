@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CF9FSS19YT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-CF9FSS19YT");
+    </script>
+    <link
+      rel="icon"
+      href="https://www.youtube.com/s/desktop/4aac258c/img/favicon_32.png"
+      sizes="32x32"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Youtube</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <!-- LEFT SIDE LOGO -->
+      <div class="side_menu">
+        <div class="logo__">
+          <div class="bar" onclick="sidemenusmall()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!--RIGHT SIDE NAVBAR ICONS AND SEARCH -->
+      <div>
+        <nav>
+          <div class="center_side--nav">
+            <div class="searchbar">
+              <input type="text" placeholder="Search" id="video_search" />
+              <div onclick="SearchVideo('searchlist')">
+                <img
+                  src="https://cdn2.iconfinder.com/data/icons/apple-inspire-white/100/Apple-30-512.png"
+                  width="20px"
+                  height="20px"
+                />
+              </div>
+            </div>
+            <div class="mic">
+              <span class="material-icons">mic</span>
+            </div>
+          </div>
+          <div class="right_side--nav">
+            <div>
+              <span class="material-icons-outlined"> video_call </span>
+            </div>
+            <div>
+              <span class="material-icons-outlined"> apps </span>
+            </div>
+            <div>
+              <span class="material-icons-outlined">notifications</span>
+            </div>
+            <div>
+              <img
+                src="https://assets.wakelet.com/monomer/default/avatar/wk-a-avatar-blue.jpg"
+                class="avtar"
+              />
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <!--SIDE MENU BAR NAVBAR -->
+      <div class="menu__container">
+        <div>
+          <div class="menu__items active">
+            <span class="material-icons"> home </span>
+            <span>Home</span>
+          </div>
+          <div class="menu__items">
+            <span class="material-icons-outlined"> explore </span>
+            <span>Explore</span>
+          </div>
+          <div class="menu__items">
+            <span class="material-icons-outlined"> subscriptions </span>
+
+            <span>Subscription</span>
+          </div>
+          <div class="divider"><span></span></div>
+          <div class="menu__items small_width_remove">
+            <span class="material-icons-outlined"> video_library </span>
+            <span>Library</span>
+          </div>
+          <div class="menu__items small_width_remove">
+            <span class="material-icons-outlined"> history </span>
+            <span>History</span>
+          </div>
+          <div class="menu__items small_width_remove">
+            <span class="material-icons-outlined"> slideshow </span>
+
+            <span>Your videos</span>
+          </div>
+          <div class="menu__items small_width_remove">
+            <span class="material-icons-outlined"> watch_later </span>
+            <span>Watch later</span>
+          </div>
+          <div class="menu__items small_width_remove">
+            <span class="material-icons-outlined"> thumb_up </span>
+            <span>Liked videos</span>
+          </div>
+        </div>
+      </div>
+
+      <!--VIDEO CONTENT -->
+      <div class="main_container">
+        <div class="filter_container">
+          <div>All</div>
+          <div>Mixes</div>
+          <div>Comedies</div>
+          <div>Music</div>
+          <div class="remove_small_screen">JavaScript</div>
+          <div class="remove_small_screen">React</div>
+          <div class="remove_small_screen">Gaming</div>
+          <div class="remove_small_screen">Web Series</div>
+          <div class="remove_small_screen">Algorithms</div>
+          <div class="remove_small_screen">Cartoon</div>
+          <div class="remove_small_screen">Trailor</div>
+        </div>
+        <div class="video_container"></div>
+      </div>
+    </div>
+  </body>
+</html>
